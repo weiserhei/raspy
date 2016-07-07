@@ -44,7 +44,7 @@ def get_cpu_temperature():
 
 
 cpu_temperature = get_cpu_temperature()
-message = "IP: " + str(ipaddr) + "Temp: " + str(get_cpu_temperature()) + chr(223)+ "C"
+message = "IP: " + str(ipaddr) + "Temp: " + str(get_cpu_temperature()) + chr(223) + "C"
 
 lcd.message(message)
 print(message)

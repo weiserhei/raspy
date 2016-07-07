@@ -4,7 +4,7 @@
 import RPi.GPIO as GPIO
 
 GPIO.setmode(GPIO.BCM)
-PIN = 27
+PIN = 21
 
 # GPIO PIN set up as input. It is pulled up to stop false signals
 GPIO.setup(PIN, GPIO.IN, pull_up_down=GPIO.PUD_UP)

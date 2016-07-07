@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/env python
 # Stopwatch with progress
 
 from Adafruit_CharLCD import Adafruit_CharLCD
