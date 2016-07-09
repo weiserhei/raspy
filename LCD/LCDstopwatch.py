@@ -12,7 +12,7 @@ lcd = Adafruit_CharLCD(rs=4, en=17,
                        cols=16, lines=2)
 
 
-def format_time():
+def format_time(displayTime):
     """ Special function to format milliseconds
     http://stackoverflow.com/questions/11040177/python-datetime-round-trim-number-of-digits-in-microseconds"""
     # t = datetime.datetime.now()
@@ -70,7 +70,7 @@ while 1:
     displayTime = millis - starttime
     # stamp = datetime.fromtimestamp(displayTime).strftime('%H:%M:%S')
     # stamp = datetime.fromtimestamp(displayTime / 1000).strftime('%M:%S:%f')
-    stamp = format_time()
+    stamp = format_time(displayTime)
     # stamp = '%s.%03d' % (time.strftime('%H:%M:%S', time.gmtime(s)), ms)
     lcd.message("TIME: " + str(stamp))
     time.sleep(0.1)
