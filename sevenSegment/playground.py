@@ -1,5 +1,7 @@
 #!/usr/bin/env python
 # 7-Segment LCD playground
+# http://www.electro-tech-online.com/threads/ascii-to-7-segment.117620/
+# http://www.aqua-calc.com/convert/number/hexadecimal-to-binary
 
 from tm1637_class import TM1637
 import time
