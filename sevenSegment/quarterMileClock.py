@@ -125,12 +125,11 @@ Display.Clear()
 #             time.sleep(0.5)
 # except KeyboardInterrupt:
 #     pass
+
 Display.ShowDoublepoint(True)
 Display.Show([0x3F, 0x3F, 0x3F, 0x3F])
-
-raw_input("")
-
-Display.Clear()
+# raw_input("")
+# Display.Clear()
 
 starttime = time.time() * 1000
 lcd.clear()
@@ -156,10 +155,9 @@ while True:
 
     sevenSegDisplayTime(stamp)
 
-    if displayTime > 6000:
-        break
+    # if displayTime > 6000:
+        # break
 
-    time.sleep(0.09)
 
 # exit
 Display.ShowDoublepoint(False)
@@ -168,7 +166,7 @@ Display.Show(done)
 time.sleep(3)
 # Display.Clear()
 
-while True:
-    for i in range(len(sequence)):
-        Display.Show(sequence[i])
-        time.sleep(0.5)
+# while True:
+#     for i in range(len(sequence)):
+#         Display.Show(sequence[i])
+#         time.sleep(0.5)
