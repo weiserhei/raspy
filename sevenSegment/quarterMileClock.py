@@ -158,6 +158,7 @@ while True:
     # if displayTime > 6000:
         # break
 
+    time.sleep(0.05)
 
 # exit
 Display.ShowDoublepoint(False)
